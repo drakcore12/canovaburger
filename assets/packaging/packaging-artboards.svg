@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" role="img" aria-labelledby="title">
+  <title id="title">Canova Burgers packaging artwork references</title>
+  <rect width="1800" height="1100" fill="#F2E9D8"/>
+  <style>
+    .title{font:900 76px 'Noto Sans Display',Arial,sans-serif}.body{font:700 34px Inter,Arial,sans-serif}.small{font:700 24px Inter,Arial,sans-serif}
+  </style>
+  <text x="70" y="95" class="title" fill="#0D0D0D">PACKAGING ARTBOARDS</text>
+  <text x="72" y="145" class="small" fill="#E6392E">Concept artwork - adapt to supplier dielines before printing.</text>
+  <g transform="translate(70 210)">
+    <rect width="470" height="350" rx="28" fill="#0D0D0D"/>
+    <text x="235" y="145" text-anchor="middle" class="title" font-size="64" fill="#F2E9D8">CANOVA</text>
+    <text x="235" y="205" text-anchor="middle" class="body" fill="#FFC72C">BURGERS</text>
+    <text x="235" y="300" text-anchor="middle" class="small" fill="#F2E9D8">BIG FLAVOR. NO EXCUSES.</text>
+    <text x="10" y="390" class="body" fill="#0D0D0D">BOX TOP</text>
+  </g>
+  <g transform="translate(650 210)">
+    <path d="M40 0h280l35 350H0Z" fill="#D8B98D"/>
+    <text x="178" y="150" text-anchor="middle" class="title" font-size="58" fill="#0D0D0D">CANOVA</text>
+    <text x="178" y="205" text-anchor="middle" class="body" fill="#E6392E">BURGERS</text>
+    <text x="178" y="300" text-anchor="middle" class="small" fill="#0D0D0D">HANDLE WITH HUNGER.</text>
+    <text x="0" y="390" class="body" fill="#0D0D0D">DELIVERY BAG</text>
+  </g>
+  <g transform="translate(1100 210)">
+    <path d="M60 0h260l-25 350H85Z" fill="#0D0D0D"/>
+    <rect x="85" y="295" width="210" height="55" fill="#FFC72C"/>
+    <text x="190" y="135" text-anchor="middle" class="title" font-size="54" fill="#F2E9D8">CANOVA</text>
+    <text x="190" y="190" text-anchor="middle" class="body" fill="#FFC72C">BURGERS</text>
+    <text x="0" y="390" class="body" fill="#0D0D0D">CUP WRAP</text>
+  </g>
+  <g transform="translate(100 700)">
+    <rect width="580" height="220" rx="24" fill="#0D0D0D"/>
+    <text x="290" y="95" text-anchor="middle" class="title" font-size="62" fill="#F2E9D8">CRISPY.</text>
+    <text x="290" y="165" text-anchor="middle" class="title" font-size="62" fill="#FFC72C">GOLDEN. GONE.</text>
+    <text x="0" y="270" class="body" fill="#0D0D0D">FRIES SLEEVE</text>
+  </g>
+  <g transform="translate(930 660)">
+    <circle cx="220" cy="220" r="205" fill="#0D0D0D" stroke="#FFC72C" stroke-width="14"/>
+    <circle cx="220" cy="220" r="175" fill="none" stroke="#F2E9D8" stroke-width="7"/>
+    <text x="220" y="135" text-anchor="middle" class="body" fill="#F2E9D8">CANOVA BURGERS</text>
+    <text x="220" y="245" text-anchor="middle" class="title" font-size="110" fill="#FFC72C">C</text>
+    <text x="220" y="320" text-anchor="middle" class="small" fill="#F2E9D8">BIG FLAVOR. NO EXCUSES.</text>
+    <text x="0" y="480" class="body" fill="#0D0D0D">ROUND STICKER / SEAL</text>
+  </g>
+</svg>
