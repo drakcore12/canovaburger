@@ -1,0 +1,12 @@
+:root {
+  --canova-charcoal: #0D0D0D;
+  --canova-cream: #F2E9D8;
+  --canova-cheese: #FFC72C;
+  --canova-grill-red: #E6392E;
+  --canova-fire-orange: #FF8A00;
+  --canova-white: #FFFFFF;
+  --canova-gray: #2B2B2B;
+  --canova-radius: 18px;
+  --canova-display: "Noto Sans Display", "Arial Narrow", sans-serif;
+  --canova-body: "Inter", "Montserrat", Arial, sans-serif;
+}
