@@ -4,24 +4,28 @@ Sistema de identidad visual y verbal de **Canova Burgers**.
 
 > **Versión:** 1.0  
 > **Estado:** identidad inicial lista para validación y adaptación de producción.  
-> **Lema:** BIG FLAVOR. NO EXCUSES.
+> **Lema:** **BIG FLAVOR. NO EXCUSES.**
 
-## Descarga principal
+## Contenido del repositorio
 
-El paquete completo incluye manual PDF y DOCX, logos SVG/PNG, isotipo, sello, iconos, patrones, packaging, plantillas de redes, tokens y referencias del proceso.
+- [`docs/manual/`](docs/manual/): manual completo de identidad en Markdown.
+- [`docs/strategy/`](docs/strategy/): propósito, audiencia, posicionamiento, voz y mensajes.
+- [`docs/production/`](docs/production/): normas visuales, producción y lista de lanzamiento.
+- [`assets/logos/`](assets/logos/): isotipo C-hamburguesa, sello y composiciones vertical/horizontal.
+- [`assets/icons/`](assets/icons/): sistema de iconografía.
+- [`assets/patterns/`](assets/patterns/): patrón para papel y superficies.
+- [`assets/packaging/`](assets/packaging/): artboards de referencia para packaging.
+- [`assets/social/`](assets/social/): artboards de redes y delivery.
+- [`assets/tokens/`](assets/tokens/): paleta en JSON y variables CSS.
 
-## Estructura del paquete
+Los archivos SVG y Markdown son los maestros editables del repositorio. Las exportaciones PDF, DOCX, PNG y el ZIP completo se generan y distribuyen como paquete de entrega.
 
-- `docs/manual/`: manual de marca en PDF y DOCX.
-- `docs/strategy/`: estrategia, propósito, audiencia, voz y mensajes.
-- `docs/production/`: normas visuales, producción y lista de lanzamiento.
-- `assets/logos/`: logo principal, horizontal, isotipo, sello y versiones monocromáticas.
-- `assets/icons/`: iconografía base.
-- `assets/patterns/`: patrón de papel envoltorio.
-- `assets/packaging/`: artes genéricos para caja, bolsa, vaso, papas y sticker.
-- `assets/social/`: plantillas para avatar, Instagram, historias, banners y portada.
-- `assets/tokens/`: colores en JSON y variables CSS.
-- `reference/`: tableros conceptuales y bocetos.
+## Uso rápido
+
+1. Use `assets/logos/logo-vertical.svg` como versión protagonista.
+2. Use `assets/logos/logo-horizontal.svg` en encabezados y banners.
+3. Use `assets/logos/isotipo-c-burger.svg` para avatar o app icon.
+4. Use `assets/logos/seal-circular.svg` en stickers, vasos y sellos.
 
 ## Colores
 
@@ -33,6 +37,14 @@ El paquete completo incluye manual PDF y DOCX, logos SVG/PNG, isotipo, sello, ic
 | Rojo parrilla | `#E6392E` |
 | Naranja fuego | `#FF8A00` |
 
+## Tipografías
+
+El wordmark se trabaja como lettering vectorial. Para titulares se recomienda **Noto Sans Display ExtraCondensed Black** y para texto **Inter** o **Montserrat**. Los archivos de fuentes no se incluyen.
+
 ## Nota de producción
 
-Los empaques son artes conceptuales, no dielines. El proveedor de impresión debe suministrar los troqueles y especificaciones finales. La disponibilidad legal del nombre y del símbolo no ha sido verificada en este paquete.
+Los empaques incluidos son artes conceptuales, no dielines. El proveedor de impresión debe suministrar los troqueles y especificaciones finales. La disponibilidad legal del nombre y del símbolo debe verificarse antes de registrar o invertir en producción masiva.
+
+## Derechos
+
+Identidad desarrollada para el proyecto Canova Burgers. La publicación del repositorio no concede una licencia de reutilización a terceros.
