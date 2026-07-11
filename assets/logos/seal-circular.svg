@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title">
+  <title id="title">Canova Burgers circular seal</title>
+  <rect width="1000" height="1000" fill="#0D0D0D"/>
+  <circle cx="500" cy="500" r="450" fill="none" stroke="#F2E9D8" stroke-width="22"/>
+  <circle cx="500" cy="500" r="405" fill="none" stroke="#F2E9D8" stroke-width="7"/>
+  <defs>
+    <clipPath id="t"><rect x="250" y="250" width="500" height="215"/></clipPath>
+    <clipPath id="b"><rect x="250" y="535" width="500" height="215"/></clipPath>
+    <path id="topArc" d="M170 500A330 330 0 0 1 830 500"/>
+    <path id="bottomArc" d="M830 530A330 330 0 0 1 170 530"/>
+  </defs>
+  <g transform="translate(250 250) scale(2.5)">
+    <defs>
+      <clipPath id="it"><rect width="200" height="86"/></clipPath>
+      <clipPath id="ib"><rect y="114" width="200" height="86"/></clipPath>
+    </defs>
+    <path d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" fill="#FFC72C" clip-path="url(#it)"/>
+    <path d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" fill="#FFC72C" clip-path="url(#ib)"/>
+    <path d="M31 91c23-5 49 5 73 0 17-3 33-3 46 0 3 1 4 6 1 8-22 5-47 0-69 3-22 2-39-3-51-1-5 1-6-7 0-10Z" fill="#FFC72C"/>
+    <rect x="29" y="103" width="121" height="9" rx="4.5" fill="#E6392E"/>
+  </g>
+  <text fill="#F2E9D8" font-family="Inter,Montserrat,Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="8"><textPath href="#topArc" startOffset="50%" text-anchor="middle">CANOVA BURGERS</textPath></text>
+  <text fill="#F2E9D8" font-family="Inter,Montserrat,Arial,sans-serif" font-size="44" font-weight="700" letter-spacing="5"><textPath href="#bottomArc" startOffset="50%" text-anchor="middle">BIG FLAVOR · NO EXCUSES</textPath></text>
+</svg>
