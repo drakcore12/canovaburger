@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" role="img" aria-labelledby="title">
+  <title id="title">Canova Burgers vertical logo</title>
+  <rect width="1200" height="1000" fill="#0D0D0D"/>
+  <path d="M180 270Q600 30 1020 270Q1000 315 940 325H260Q200 315 180 270Z" fill="#FFC72C"/>
+  <g fill="#0D0D0D">
+    <ellipse cx="360" cy="190" rx="18" ry="7" transform="rotate(-15 360 190)"/>
+    <ellipse cx="470" cy="145" rx="18" ry="7" transform="rotate(20 470 145)"/>
+    <ellipse cx="610" cy="125" rx="18" ry="7" transform="rotate(-10 610 125)"/>
+    <ellipse cx="745" cy="150" rx="18" ry="7" transform="rotate(15 745 150)"/>
+    <ellipse cx="850" cy="205" rx="18" ry="7" transform="rotate(-20 850 205)"/>
+  </g>
+  <text x="600" y="590" text-anchor="middle" fill="#F2E9D8" font-family="Noto Sans Display,Arial Narrow,sans-serif" font-size="285" font-weight="900" letter-spacing="-10">CANOVA</text>
+  <rect x="330" y="635" width="70" height="13" rx="6" fill="#E6392E"/>
+  <rect x="800" y="635" width="70" height="13" rx="6" fill="#E6392E"/>
+  <text x="600" y="690" text-anchor="middle" fill="#FFC72C" font-family="Inter,Montserrat,Arial,sans-serif" font-size="76" font-weight="800" letter-spacing="18">BURGERS</text>
+  <path d="M230 760Q600 900 970 760L930 710H270Z" fill="#FFC72C"/>
+</svg>
