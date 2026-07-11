@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 120" role="img" aria-labelledby="title">
+  <title id="title">Canova Burgers icon set</title>
+  <rect width="720" height="120" fill="#0D0D0D"/>
+  <g fill="none" stroke="#FFC72C" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(10 10)"><path d="M18 45Q50 10 82 45M16 58h68M22 72Q50 88 78 72"/><path d="M20 53q14-5 26 1t34-1"/></g>
+    <g transform="translate(130 10)"><path d="M30 30 26 12M43 30 42 8M57 30 60 10M70 30 75 15"/><path d="M22 30h56l-8 58H30Z"/></g>
+    <g transform="translate(250 10)"><path d="M28 28h44l-6 60H34Z"/><path d="m55 28 9-20h18M34 45h32"/></g>
+    <g transform="translate(370 10)"><path d="M50 8c18 22 28 36 22 56-4 16-14 26-24 26-20 0-30-14-26-32 3-13 14-22 16-36 10 7 14 16 12 27 10-7 12-22 0-41Z"/></g>
+    <g transform="translate(490 10)"><path d="M18 32h64v36H18ZM30 32v36M45 32v36M60 32v36M75 32v36M30 68l-6 22M70 68l6 22"/></g>
+    <g transform="translate(610 10)"><path d="M12 45h46v31H22q-10 0-10-10Z"/><path d="M58 52h17l13 14v10H58Z"/><circle cx="32" cy="78" r="8"/><circle cx="74" cy="78" r="8"/></g>
+  </g>
+</svg>
