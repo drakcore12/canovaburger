@@ -7,17 +7,33 @@ const businessConfig = {
 };
 
 const products = [
-  { id:"classic", category:"burgers", tag:{es:"FIRMA",en:"SIGNATURE"}, name:{es:"Canova Classic",en:"Canova Classic"}, description:{es:"Doble smash, queso americano, pepinillos, cebolla y salsa Canova.",en:"Double smash, American cheese, pickles, onion and Canova sauce."}, price:14.90, art:"classic" },
-  { id:"melt", category:"burgers", tag:{es:"MÁS QUESO",en:"EXTRA CHEESE"}, name:{es:"Double Melt",en:"Double Melt"}, description:{es:"Doble smash, doble queso, cebolla caramelizada y salsa especial.",en:"Double smash, double cheese, caramelized onion and special sauce."}, price:15.90, art:"melt" },
-  { id:"heat", category:"burgers", tag:{es:"PICANTE",en:"SPICY"}, name:{es:"Miami Heat",en:"Miami Heat"}, description:{es:"Doble smash, pepper jack, jalapeños y spicy mayo.",en:"Double smash, pepper jack, jalapeños and spicy mayo."}, price:15.50, art:"heat" },
-  { id:"bacon", category:"burgers", tag:{es:"CARGADA",en:"LOADED"}, name:{es:"Golden Bacon",en:"Golden Bacon"}, description:{es:"Doble smash, cheddar, bacon crujiente y salsa dorada.",en:"Double smash, cheddar, crispy bacon and golden sauce."}, price:16.50, art:"bacon" },
-  { id:"fries", category:"sides", tag:{es:"CRUJIENTES",en:"CRISPY"}, name:{es:"Classic Fries",en:"Classic Fries"}, description:{es:"Papas doradas con sal Canova.",en:"Golden fries with Canova seasoning."}, price:4.50, art:"side" },
-  { id:"loaded", category:"sides", tag:{es:"PARA COMPARTIR",en:"TO SHARE"}, name:{es:"Loaded Fries",en:"Loaded Fries"}, description:{es:"Papas, queso, carne smash, cebolla y salsa Canova.",en:"Fries, cheese, smash beef, onion and Canova sauce."}, price:9.90, art:"side" },
-  { id:"rings", category:"sides", tag:{es:"EXTRA CRUNCH",en:"EXTRA CRUNCH"}, name:{es:"Onion Rings",en:"Onion Rings"}, description:{es:"Aros de cebolla crujientes con salsa especial.",en:"Crispy onion rings with special sauce."}, price:5.90, art:"side" },
-  { id:"bigcombo", category:"combos", tag:{es:"COMBO",en:"COMBO"}, name:{es:"The Big One",en:"The Big One"}, description:{es:"Canova Classic, papas clásicas, salsa y bebida.",en:"Canova Classic, classic fries, sauce and drink."}, price:20.90, art:"combo" },
-  { id:"doublecombo", category:"combos", tag:{es:"COMBO",en:"COMBO"}, name:{es:"Double Trouble",en:"Double Trouble"}, description:{es:"Double Melt, loaded fries y bebida.",en:"Double Melt, loaded fries and drink."}, price:24.90, art:"combo" },
-  { id:"cola", category:"drinks", tag:{es:"BIEN FRÍA",en:"ICE COLD"}, name:{es:"Soda",en:"Soda"}, description:{es:"Coca-Cola, Coca-Cola Zero o Sprite.",en:"Coca-Cola, Coca-Cola Zero or Sprite."}, price:2.90, art:"drink" },
-  { id:"water", category:"drinks", tag:{es:"FRÍA",en:"COLD"}, name:{es:"Agua",en:"Water"}, description:{es:"Agua embotellada.",en:"Bottled water."}, price:2.00, art:"drink" },
+  { id:"sinverguenza", category:"burgers", tag:{es:"LA CLÁSICA",en:"THE CLASSIC"}, name:{es:"La Sin Vergüenza",en:"La Sin Vergüenza"}, description:{es:"Doble smash, doble queso American, pepinillos, cebolla a la plancha y Canova Sauce.",en:"Double smash, double American cheese, pickles, grilled onion and Canova Sauce."}, price:9.49, appPrice:10.99, art:"classic" },
+  { id:"miamicriminal", category:"burgers", tag:{es:"SABOR MIAMI",en:"MIAMI FLAVOR"}, name:{es:"La Miami Criminal",en:"La Miami Criminal"}, description:{es:"Doble smash, queso suizo, jamón crujiente, cebolla, pepinillos, papitas finas y Mojo Mustard Sauce.",en:"Double smash, Swiss cheese, crispy ham, onion, pickles, shoestring potatoes and Mojo Mustard Sauce."}, price:11.99, appPrice:13.49, art:"miami" },
+  { id:"colesterol", category:"burgers", tag:{es:"SIN LÍMITES",en:"NO LIMITS"}, name:{es:"La Colesterol",en:"La Colesterol"}, description:{es:"Doble smash, cheddar, tocineta, cebolla caramelizada, huevo frito y Canova Sauce. No vino a cuidarte. Vino a hacerte feliz.",en:"Double smash, cheddar, bacon, caramelized onion, fried egg and Canova Sauce. It came to make you happy."}, price:12.99, appPrice:14.49, art:"colesterol" },
+  { id:"lemonrush", category:"sides", tag:{es:"FRENCH / CRIOLLA",en:"FRENCH / CRIOLLA"}, name:{es:"Lemon Rush",en:"Lemon Rush"}, description:{es:"Limón fresco, sal y sazón cítrica Canova. Criolla Mode +$1.00.",en:"Fresh lime, salt and Canova citrus seasoning. Criolla Mode +$1.00."}, price:4.49, art:"fries" },
+  { id:"bravaheat", category:"sides", tag:{es:"PICANTE MODERADO",en:"MEDIUM HEAT"}, name:{es:"Brava Heat",en:"Brava Heat"}, description:{es:"Salsa brava, mayonesa de ajo y paprika ahumada. Criolla Mode +$1.00.",en:"Brava sauce, garlic mayo and smoked paprika. Criolla Mode +$1.00."}, price:5.49, art:"fries" },
+  { id:"cheesedust", category:"sides", tag:{es:"QUESO INTENSO",en:"CHEESY"}, name:{es:"Cheese Dust",en:"Cheese Dust"}, description:{es:"Queso en polvo y sazón especial Canova. Criolla Mode +$1.00.",en:"Cheese powder and Canova seasoning. Criolla Mode +$1.00."}, price:4.99, art:"fries" },
+  { id:"makecombo", category:"combos", tag:{es:"AGRÉGALO",en:"ADD IT"}, name:{es:"Make It a Combo",en:"Make It a Combo"}, description:{es:"Añade papas French Mode y bebida a cualquier hamburguesa. Cambio a Criolla Mode +$1.00.",en:"Add French Mode fries and a drink to any burger. Upgrade to Criolla Mode +$1.00."}, price:4.49, art:"combo" },
+  { id:"canovasauce", category:"sauces", tag:{es:"DE LA CASA",en:"HOUSE SAUCE"}, name:{es:"Canova Sauce",en:"Canova Sauce"}, description:{es:"Cremosa, ligeramente dulce, ácida y ahumada.",en:"Creamy, lightly sweet, tangy and smoky."}, price:0.75, art:"sauce" },
+  { id:"mojomustard", category:"sauces", tag:{es:"CÍTRICA",en:"CITRUS"}, name:{es:"Mojo Mustard Sauce",en:"Mojo Mustard Sauce"}, description:{es:"Mostaza cremosa, ajo, cítrico y especias.",en:"Creamy mustard, garlic, citrus and spices."}, price:0.75, art:"sauce" },
+  { id:"spicycanova", category:"sauces", tag:{es:"PICANTE",en:"SPICY"}, name:{es:"Spicy Canova",en:"Spicy Canova"}, description:{es:"La Canova Sauce con un golpe extra de intensidad.",en:"Canova Sauce with an extra hit of heat."}, price:0.75, art:"sauce" },
+  { id:"soda", category:"drinks", tag:{es:"BIEN FRÍA",en:"ICE COLD"}, name:{es:"Soda",en:"Soda"}, description:{es:"Coca-Cola, Coca-Cola Zero o Sprite.",en:"Coca-Cola, Coca-Cola Zero or Sprite."}, price:2.49, art:"drink" },
+  { id:"water", category:"drinks", tag:{es:"FRÍA",en:"COLD"}, name:{es:"Agua",en:"Water"}, description:{es:"Agua embotellada.",en:"Bottled water."}, price:1.99, art:"drink" },
+  { id:"tentacion", category:"desserts", tag:{es:"SWEET ENDING",en:"SWEET ENDING"}, name:{es:"La Tentación",en:"La Tentación"}, description:{es:"Brownie intenso de chocolate con salsa de chocolate o dulce de leche.",en:"Rich chocolate brownie with chocolate or dulce de leche sauce."}, price:4.99, art:"dessert" },
+];
+
+const extras = [
+  {name:{es:"Carne smash adicional",en:"Extra smash patty"},price:2.25},
+  {name:{es:"Queso American",en:"American cheese"},price:1.00},
+  {name:{es:"Queso cheddar",en:"Cheddar cheese"},price:1.00},
+  {name:{es:"Queso suizo",en:"Swiss cheese"},price:1.00},
+  {name:{es:"Tocineta",en:"Bacon"},price:1.75},
+  {name:{es:"Huevo frito",en:"Fried egg"},price:1.50},
+  {name:{es:"Jamón crujiente",en:"Crispy ham"},price:1.50},
+  {name:{es:"Cebolla caramelizada",en:"Caramelized onion"},price:1.00},
+  {name:{es:"Papitas crujientes",en:"Shoestring potatoes"},price:.75},
+  {name:{es:"Pepinillos",en:"Pickles"},price:.50},
+  {name:{es:"Salsa adicional",en:"Extra sauce"},price:.75},
 ];
 
 const translations = {
@@ -25,11 +41,43 @@ const translations = {
   en:{navMenu:"Menu",navStory:"Story",navExperience:"Experience",navContact:"Contact",cart:"Cart",orderNow:"Order now",heroEyebrow:"SMASH BURGERS · MIAMI",heroLine1:"BIG FLAVOR.",heroLine2:"NO EXCUSES.",heroLead:"Big burgers for big cravings. Caramelized smash beef, melted cheese and sauces you remember.",seeMenu:"See menu",knowStory:"Meet Canova",doubleSmash:"double smash",realFlavor:"real flavor",madeHere:"made here",menuEyebrow:"LAUNCH MENU",menuTitle:"Come hungry.",menuIntro:"A short menu with serious product. Every recipe is built to arrive hot, firm and as tempting as the photo.",filterAll:"All",filterBurgers:"Burgers",filterSides:"Sides",filterCombos:"Combos",filterDrinks:"Drinks",priceNote:"Reference launch prices in USD. Editable before sales open.",comboEyebrow:"BUILD YOUR COMBO",comboTitle:"Your hunger. Your rules.",comboText:"Choose your burger, add crispy fries, extra sauce and an ice-cold drink. No detours. No timid portions.",comboOne:"Classic fries or loaded fries",comboTwo:"Canova sauce or spicy mayo",comboThree:"Ice-cold drink",comboFour:"Delivery-tested packaging",buildCombo:"Build my combo",whyEyebrow:"WHY CANOVA",whyTitle:"What you see is what you should get.",valueOneTitle:"Real smash",valueOneText:"Deep caramelization, crispy edges and juicy beef.",valueTwoTitle:"Honest portions",valueTwoText:"The size in the photo should be the size at your door.",valueThreeTitle:"Delivery tested",valueThreeText:"Bread, build and packaging designed for the trip.",valueFourTitle:"Signature flavor",valueFourText:"House sauces and combinations that are easy to remember.",storyEyebrow:"OUR STORY",storyTitle:"Rebel attitude outside. Family care inside.",storyP1:"Canova was born from a family that knows a great meal can transform an ordinary moment.",storyP2:"We mix Latin generosity —where serving plenty is also a way to care— with Miami's urban energy. The result: burgers that make you open the box and know you chose right.",packEyebrow:"BUILT TO ARRIVE RIGHT",packTitle:"The experience starts before the first bite.",testEyebrow:"LAUNCH TEST",testTitle:"This is how Canova should feel.",testDisclaimer:"Sample testimonials to visualize the tone. Replace them with verified reviews after launch.",sample:"SAMPLE",waitEyebrow:"COMING SOON TO MIAMI",waitTitle:"Be among the first to try Canova.",waitText:"Join the launch list for opening date, delivery area and inaugural promotion.",name:"Name",email:"Email",zip:"ZIP code",joinList:"Join the launch list",faqTitle:"Before you order.",faq1q:"Where does Canova deliver?",faq1a:"The exact service area will be announced before launch. We will begin with a limited Miami radius to protect time and temperature.",faq2q:"Will pickup be available?",faq2a:"Yes. The site will show the address and hours once the pickup point is confirmed.",faq3q:"How do you handle allergens?",faq3a:"Products may contain gluten, dairy, egg, soy and other allergens. Final details will be available before purchase.",faq4q:"Do you accept large orders?",faq4a:"Yes, with advance notice and operational availability. Contact us on WhatsApp.",footerClaim:"Big burgers for big cravings.",footerExplore:"Explore",footerInfo:"Information",allergens:"Allergens",privacy:"Privacy",footerService:"Delivery & pickup\nArea and hours to be confirmed",yourOrder:"Your order",emptyCart:"Your cart is waiting for something big.",delivery:"Delivery",notes:"Order notes",subtotal:"Subtotal",checkout:"Continue order",checkoutNote:"Demo: the final ordering link will be configured before launch.",add:"Add"}
 };
 
+Object.assign(translations.es,{
+  menuIntro:"Tres smash burgers, papas en dos modos, salsas propias y un final dulce. Un menú corto, intenso y listo para pickup o delivery.",
+  filterSides:"Papas",
+  filterSauces:"Salsas",
+  filterDesserts:"Postre",
+  priceNote:"Precios de pickup en USD. Los precios en aplicaciones pueden variar.",
+  potatoEyebrow:"ELIGE TU PAPA",
+  potatoTitle:"French Mode o Criolla Mode.",
+  frenchModeText:"Largas, doradas y crujientes.",
+  criollaModeText:"Suaves por dentro, crujientes por fuera. +$1.00",
+  extrasEyebrow:"HAZLA TUYA",
+  extrasTitle:"Extras",
+  appPriceLabel:"Apps"
+});
+
+Object.assign(translations.en,{
+  menuIntro:"Three smash burgers, fries in two modes, house sauces and one sweet ending. A focused menu built for pickup or delivery.",
+  filterSides:"Fries",
+  filterSauces:"Sauces",
+  filterDesserts:"Dessert",
+  priceNote:"Pickup prices in USD. Delivery app prices may vary.",
+  potatoEyebrow:"CHOOSE YOUR FRIES",
+  potatoTitle:"French Mode or Criolla Mode.",
+  frenchModeText:"Long, golden and crispy.",
+  criollaModeText:"Soft inside, crispy outside. +$1.00",
+  extrasEyebrow:"MAKE IT YOURS",
+  extrasTitle:"Extras",
+  appPriceLabel:"Apps"
+});
+
 let language = localStorage.getItem("canova-language") || "es";
 let activeFilter = "all";
 let cart = JSON.parse(localStorage.getItem("canova-cart") || "[]");
+cart = cart.filter(item=>products.some(product=>product.id===item.id));
 
 const menuGrid = document.getElementById("menuGrid");
+const extrasGrid = document.getElementById("extrasGrid");
 const template = document.getElementById("productTemplate");
 const cartDrawer = document.getElementById("cartDrawer");
 const cartItems = document.getElementById("cartItems");
@@ -48,17 +96,30 @@ function renderProducts(){
     card.querySelector("h3").textContent=product.name[language];
     card.querySelector(".product-description").textContent=product.description[language];
     card.querySelector(".product-price").textContent=money(product.price);
+    card.querySelector(".product-app-price").textContent=product.appPrice?`${translations[language].appPriceLabel} ${money(product.appPrice)}`:"";
     card.querySelector(".add-product").addEventListener("click",()=>addToCart(product.id));
     card.style.transitionDelay=`${Math.min(index*45,220)}ms`;
-    if(product.art==="heat") card.querySelector(".product-art").style.background="linear-gradient(135deg,#2b0907,#6f120c)";
-    if(product.art==="melt") card.querySelector(".product-art").style.background="linear-gradient(135deg,#261b09,#6d4a08)";
-    if(product.art==="bacon") card.querySelector(".product-art").style.background="linear-gradient(135deg,#261108,#6f2f13)";
+    if(product.art==="miami") card.querySelector(".product-art").style.background="linear-gradient(135deg,#251407,#70470c)";
+    if(product.art==="colesterol") card.querySelector(".product-art").style.background="linear-gradient(135deg,#2b0907,#761d0f)";
+    if(product.art==="sauce") card.querySelector(".product-art").style.background="linear-gradient(135deg,#17100a,#533117)";
+    if(product.art==="dessert") card.querySelector(".product-art").style.background="linear-gradient(135deg,#1b0b08,#5b1f13)";
     if(product.category!=="burgers"){
-      card.querySelector(".mini-burger").innerHTML=`<div style="font-family:var(--display);font-size:5rem;font-weight:900;color:var(--cheese);text-align:center">${product.category==="drinks"?"COLD":product.category==="combos"?"BIG":"CRUNCH"}</div>`;
+      const artLabels={drinks:"COLD",combos:"COMBO",sides:"FRIES",sauces:"SAUCE",desserts:"SWEET"};
+      card.querySelector(".mini-burger").innerHTML=`<div style="font-family:var(--display);font-size:4.4rem;font-weight:900;color:var(--cheese);text-align:center">${artLabels[product.category]||"CANOVA"}</div>`;
     }
     menuGrid.appendChild(node);
   });
   observeReveals();
+}
+
+function renderExtras(){
+  extrasGrid.innerHTML="";
+  extras.forEach(extra=>{
+    const item=document.createElement("div");
+    item.className="extra-item";
+    item.innerHTML=`<span>${extra.name[language]}</span><strong>+${money(extra.price)}</strong>`;
+    extrasGrid.appendChild(item);
+  });
 }
 
 function addToCart(id){
@@ -93,7 +154,7 @@ function setLanguage(lang){
   language=lang;localStorage.setItem("canova-language",lang);document.documentElement.lang=lang;
   document.getElementById("langToggle").textContent=lang==="es"?"EN":"ES";
   document.querySelectorAll("[data-i18n]").forEach(el=>{const key=el.dataset.i18n;if(translations[lang][key]!==undefined)el.textContent=translations[lang][key]});
-  renderProducts();renderCart();
+  renderProducts();renderExtras();renderCart();
 }
 
 function observeReveals(){
@@ -132,3 +193,4 @@ document.getElementById("emailLink").href=`mailto:${businessConfig.email}`;
 document.getElementById("year").textContent=new Date().getFullYear();
 
 setLanguage(language);renderCart();observeReveals();
+
