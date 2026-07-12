@@ -131,13 +131,30 @@
         <div class="menu-tabs" role="tablist" aria-label="Categorías de menú">
           <button class="menu-tab active" role="tab" aria-selected="true" data-filter="all" data-i18n="filterAll">Todo</button>
           <button class="menu-tab" role="tab" aria-selected="false" data-filter="burgers" data-i18n="filterBurgers">Burgers</button>
-          <button class="menu-tab" role="tab" aria-selected="false" data-filter="sides" data-i18n="filterSides">Acompañantes</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="sides" data-i18n="filterSides">Papas</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="sauces" data-i18n="filterSauces">Salsas</button>
           <button class="menu-tab" role="tab" aria-selected="false" data-filter="combos" data-i18n="filterCombos">Combos</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="desserts" data-i18n="filterDesserts">Postre</button>
           <button class="menu-tab" role="tab" aria-selected="false" data-filter="drinks" data-i18n="filterDrinks">Bebidas</button>
         </div>
 
         <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
-        <p class="price-note" data-i18n="priceNote">Precios de lanzamiento de referencia en USD. Editables antes de abrir ventas.</p>
+        <div class="menu-options-grid reveal">
+          <article class="menu-option-card">
+            <span class="eyebrow dark" data-i18n="potatoEyebrow">ELIGE TU PAPA</span>
+            <h3 data-i18n="potatoTitle">French Mode o Criolla Mode.</h3>
+            <div class="mode-list">
+              <div><strong>FRENCH MODE</strong><span data-i18n="frenchModeText">Largas, doradas y crujientes.</span></div>
+              <div><strong>CRIOLLA MODE</strong><span data-i18n="criollaModeText">Suaves por dentro, crujientes por fuera. +$1.00</span></div>
+            </div>
+          </article>
+          <article class="menu-option-card">
+            <span class="eyebrow dark" data-i18n="extrasEyebrow">HAZLA TUYA</span>
+            <h3 data-i18n="extrasTitle">Extras</h3>
+            <div class="extras-list" id="extrasGrid"></div>
+          </article>
+        </div>
+        <p class="price-note" data-i18n="priceNote">Precios de pickup en USD. Los precios en aplicaciones pueden variar.</p>
       </div>
     </section>
 
@@ -300,7 +317,7 @@
   <template id="productTemplate">
     <article class="product-card reveal">
       <div class="product-art"><span class="product-tag"></span><div class="mini-burger"><div class="mb-top"></div><div class="mb-fill one"></div><div class="mb-cheese"></div><div class="mb-fill two"></div><div class="mb-bottom"></div></div></div>
-      <div class="product-info"><div class="product-title-row"><h3></h3><strong class="product-price"></strong></div><p class="product-description"></p><button class="button button-dark add-product" type="button"><span data-i18n="add">Agregar</span><b>＋</b></button></div>
+      <div class="product-info"><div class="product-title-row"><h3></h3><div class="product-price-wrap"><strong class="product-price"></strong><small class="product-app-price"></small></div></div><p class="product-description"></p><button class="button button-dark add-product" type="button"><span data-i18n="add">Agregar</span><b>＋</b></button></div>
     </article>
   </template>
 
