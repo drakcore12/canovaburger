@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/logo-horizontal-white-yellow.svg" as="image" type="image/svg+xml" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
   <title>Canova Burgers — Big Flavor. No Excuses.</title>
@@ -37,17 +38,7 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a class="brand-link" href="#top" aria-label="Canova Burgers, inicio">
-        <svg class="brand-horizontal" viewBox="0 0 620 168" role="img" aria-label="Canova Burgers">
-          <g class="c-burger-mark" transform="translate(4 4) scale(.8)">
-            <path class="bun top" d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" clip-path="url(#topClipHeader)"/>
-            <path class="bun bottom" d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" clip-path="url(#bottomClipHeader)"/>
-            <path class="cheese" d="M31 91c23-5 49 5 73 0 17-3 33-3 46 0 3 1 4 6 1 8-22 5-47 0-69 3-22 2-39-3-51-1-5 1-6-7 0-10Z"/>
-            <rect class="meat" x="29" y="103" width="121" height="9" rx="4.5"/>
-            <defs><clipPath id="topClipHeader"><rect width="200" height="86"/></clipPath><clipPath id="bottomClipHeader"><rect y="114" width="200" height="86"/></clipPath></defs>
-          </g>
-          <text x="180" y="82" class="logo-word">CANOVA</text>
-          <text x="184" y="126" class="logo-sub">BURGERS</text>
-        </svg>
+        <img class="brand-horizontal" src="assets/logo-horizontal-white-yellow.svg" alt="Canova Burgers" width="1800" height="600" fetchpriority="high" decoding="async" />
       </a>
 
       <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menú">
@@ -116,23 +107,7 @@
             <span class="scribble scribble-one">DOUBLE SMASH</span>
             <span class="scribble scribble-two">SERIOUS CHEESE</span>
           </div>
-          <svg class="seal seal-hero" viewBox="0 0 420 420" aria-label="Sello Canova Burgers">
-            <defs>
-              <path id="sealTop" d="M55,210a155,155 0 1,1 310,0" />
-              <path id="sealBottom" d="M365,230a155,155 0 1,1 -310,0" />
-            </defs>
-            <circle cx="210" cy="210" r="190" class="seal-ring" />
-            <circle cx="210" cy="210" r="166" class="seal-ring-thin" />
-            <text class="seal-text"><textPath href="#sealTop" startOffset="50%" text-anchor="middle">CANOVA BURGERS</textPath></text>
-            <text class="seal-text seal-text-small"><textPath href="#sealBottom" startOffset="50%" text-anchor="middle">BIG FLAVOR · NO EXCUSES</textPath></text>
-            <g transform="translate(120 120) scale(.9)">
-              <path class="bun top" d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" clip-path="url(#topClipSeal)"/>
-              <path class="bun bottom" d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" clip-path="url(#bottomClipSeal)"/>
-              <path class="cheese" d="M31 91c23-5 49 5 73 0 17-3 33-3 46 0 3 1 4 6 1 8-22 5-47 0-69 3-22 2-39-3-51-1-5 1-6-7 0-10Z"/>
-              <rect class="meat" x="29" y="103" width="121" height="9" rx="4.5"/>
-              <defs><clipPath id="topClipSeal"><rect width="200" height="86"/></clipPath><clipPath id="bottomClipSeal"><rect y="114" width="200" height="86"/></clipPath></defs>
-            </g>
-          </svg>
+          <img class="seal seal-hero brand-seal" src="assets/seal-circular-white-yellow.svg" alt="Sello Canova Burgers" width="1000" height="1000" decoding="async" />
         </div>
       </div>
       <div class="hero-marquee" aria-label="Beneficios de Canova">
@@ -219,15 +194,7 @@
           <div class="story-signature">C como carácter.<br>Burger por naturaleza.</div>
         </div>
         <div class="story-seal-wrap reveal">
-          <svg class="seal seal-large" viewBox="0 0 420 420" aria-label="Sello Canova Burgers">
-            <defs><path id="storyTop" d="M55,210a155,155 0 1,1 310,0"/><path id="storyBottom" d="M365,230a155,155 0 1,1 -310,0"/></defs>
-            <circle cx="210" cy="210" r="190" class="seal-ring"/><circle cx="210" cy="210" r="166" class="seal-ring-thin"/>
-            <text class="seal-text"><textPath href="#storyTop" startOffset="50%" text-anchor="middle">CANOVA BURGERS</textPath></text>
-            <text class="seal-text seal-text-small"><textPath href="#storyBottom" startOffset="50%" text-anchor="middle">BIG FLAVOR · NO EXCUSES</textPath></text>
-            <text x="210" y="246" text-anchor="middle" class="seal-c">C</text>
-            <path class="seal-cheese" d="M120 188c30-8 63 8 93 0 21-5 43-5 64 0"/>
-            <path class="seal-meat" d="M120 210h158"/>
-          </svg>
+          <img class="seal seal-large brand-seal" src="assets/seal-circular-white-yellow.svg" alt="Sello Canova Burgers" width="1000" height="1000" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -302,9 +269,7 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <svg class="footer-logo" viewBox="0 0 620 168" role="img" aria-label="Canova Burgers">
-          <text x="0" y="82" class="logo-word">CANOVA</text><text x="4" y="126" class="logo-sub">BURGERS</text>
-        </svg>
+        <img class="footer-logo" src="assets/logo-horizontal-white-yellow.svg" alt="Canova Burgers" width="1800" height="600" loading="lazy" decoding="async" />
         <p data-i18n="footerClaim">Hamburguesas grandes para antojos grandes.</p>
       </div>
       <div><h3 data-i18n="footerExplore">Explora</h3><a href="#menu" data-i18n="navMenu">Menú</a><a href="#story" data-i18n="navStory">Historia</a><a href="#contact" data-i18n="navContact">Contacto</a></div>
@@ -342,3 +307,4 @@
   <script src="app.js" defer></script>
 </body>
 </html>
+
