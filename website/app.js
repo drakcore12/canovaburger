@@ -53,7 +53,12 @@ Object.assign(translations.es,{
   criollaModeText:"Suaves por dentro, crujientes por fuera. +$1.00",
   extrasEyebrow:"HAZLA TUYA",
   extrasTitle:"Extras",
-  appPriceLabel:"Apps"
+  appPriceLabel:"Apps",
+  comboText:"Elige tu burger, añade papas French Mode y una bebida. Si quieres más identidad, cambia a Criolla Mode por $1.00.",
+  comboOne:"Papas French Mode o Criolla Mode",
+  comboTwo:"Canova Sauce, Mojo Mustard o Spicy Canova",
+  comboThree:"Coca-Cola, Coca-Cola Zero, Sprite o agua",
+  comboFour:"Añádelo a cualquier burger por +$4.49"
 });
 
 Object.assign(translations.en,{
@@ -68,7 +73,12 @@ Object.assign(translations.en,{
   criollaModeText:"Soft inside, crispy outside. +$1.00",
   extrasEyebrow:"MAKE IT YOURS",
   extrasTitle:"Extras",
-  appPriceLabel:"Apps"
+  appPriceLabel:"Apps",
+  comboText:"Choose your burger, add French Mode fries and a drink. Upgrade to Criolla Mode for $1.00.",
+  comboOne:"French Mode or Criolla Mode fries",
+  comboTwo:"Canova Sauce, Mojo Mustard or Spicy Canova",
+  comboThree:"Coca-Cola, Coca-Cola Zero, Sprite or water",
+  comboFour:"Add it to any burger for +$4.49"
 });
 
 let language = localStorage.getItem("canova-language") || "es";
