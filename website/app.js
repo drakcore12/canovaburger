@@ -177,55 +177,37 @@ function initBurgerMotion(){
   const burger=stage?.querySelector(".big-burger");
   if(!stage||!burger||window.matchMedia("(prefers-reduced-motion: reduce)").matches)return;
 
-  const depths=[18,14,22,28,34,30,38,24,16,10];
+  const depths=[10,8,12,14,17,15,19,12,9,6];
   const layers=[...burger.children].map((element,index)=>({
     element,
-    depth:depths[index]||12,
-    float:1.5+(index%4)*.55,
-    phase:index*.72
+    depth:depths[index]||8
   }));
-  const shadow=stage.querySelector(".burger-shadow");
-  let targetX=0,targetY=0,currentX=0,currentY=0,active=false,frame=0;
+  let targetX=0,targetY=0,frame=0;
 
-  const animate=time=>{
-    if(!active){frame=0;return}
-    currentX+=(targetX-currentX)*.075;
-    currentY+=(targetY-currentY)*.075;
-    const breathe=Math.sin(time*.00135);
-    burger.style.setProperty("--burger-x",`${(currentX*7).toFixed(2)}px`);
-    burger.style.setProperty("--burger-y",`${(currentY*5+breathe*4).toFixed(2)}px`);
-    burger.style.setProperty("--burger-tilt-x",`${(-currentY*4).toFixed(2)}deg`);
-    burger.style.setProperty("--burger-tilt-y",`${(currentX*6).toFixed(2)}deg`);
-    layers.forEach(({element,depth,float,phase},index)=>{
-      const drift=Math.sin(time*.0017+phase)*float;
-      const x=currentX*depth;
-      const y=currentY*depth*.65+drift+(index<3?breathe*1.5:0);
-      element.style.translate=`${x.toFixed(2)}px ${y.toFixed(2)}px ${(depth*.7).toFixed(1)}px`;
+  const render=()=>{
+    burger.style.setProperty("--burger-x",`${(targetX*6).toFixed(2)}px`);
+    burger.style.setProperty("--burger-y",`${(targetY*4).toFixed(2)}px`);
+    burger.style.setProperty("--burger-tilt-x",`${(-targetY*3).toFixed(2)}deg`);
+    burger.style.setProperty("--burger-tilt-y",`${(targetX*4.5).toFixed(2)}deg`);
+    layers.forEach(({element,depth})=>{
+      const x=targetX*depth;
+      const y=targetY*depth*.55;
+      element.style.setProperty("--layer-x",`${x.toFixed(2)}px`);
+      element.style.setProperty("--layer-y",`${y.toFixed(2)}px`);
+      element.style.setProperty("--layer-z",`${(depth*.45).toFixed(1)}px`);
     });
-    if(shadow){
-      const scale=1-breathe*.035-currentY*.025;
-      shadow.style.transform=`translateX(${(currentX*9).toFixed(2)}px) scaleX(${scale.toFixed(3)})`;
-      shadow.style.opacity=String(.72+breathe*.06);
-    }
-    frame=requestAnimationFrame(animate);
+    frame=0;
   };
 
-  const start=()=>{if(!frame&&active)frame=requestAnimationFrame(animate)};
+  const schedule=()=>{if(!frame)frame=requestAnimationFrame(render)};
   stage.addEventListener("pointermove",event=>{
     if(event.pointerType&&event.pointerType!=="mouse"&&event.pointerType!=="pen")return;
     const bounds=stage.getBoundingClientRect();
     targetX=Math.max(-1,Math.min(1,((event.clientX-bounds.left)/bounds.width-.5)*2));
     targetY=Math.max(-1,Math.min(1,((event.clientY-bounds.top)/bounds.height-.5)*2));
+    schedule();
   });
-  stage.addEventListener("pointerleave",()=>{targetX=0;targetY=0});
-  new IntersectionObserver(([entry])=>{
-    active=entry.isIntersecting&&!document.hidden;
-    start();
-  },{threshold:.05}).observe(stage);
-  document.addEventListener("visibilitychange",()=>{
-    active=!document.hidden&&stage.getBoundingClientRect().bottom>0&&stage.getBoundingClientRect().top<innerHeight;
-    start();
-  });
+  stage.addEventListener("pointerleave",()=>{targetX=0;targetY=0;schedule()});
 }
 
 document.querySelectorAll(".menu-tab").forEach(tab=>tab.addEventListener("click",()=>{document.querySelectorAll(".menu-tab").forEach(t=>{t.classList.remove("active");t.setAttribute("aria-selected","false")});tab.classList.add("active");tab.setAttribute("aria-selected","true");activeFilter=tab.dataset.filter;renderProducts()}));
@@ -259,3 +241,4 @@ document.getElementById("emailLink").href=`mailto:${businessConfig.email}`;
 document.getElementById("year").textContent=new Date().getFullYear();
 
 setLanguage(language);renderCart();observeReveals();initBurgerMotion();
+
