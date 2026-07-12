@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0D0D0D" />
+  <meta name="description" content="Canova Burgers: smash burgers grandes, jugosas y llenas de sabor. Big Flavor. No Excuses. Miami, Florida." />
+  <meta property="og:title" content="Canova Burgers — Big Flavor. No Excuses." />
+  <meta property="og:description" content="Hamburguesas grandes para antojos grandes. Delivery y pickup en Miami." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/social-preview.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Canova Burgers — Big Flavor. No Excuses.</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Canova Burgers",
+    "description": "Smash burgers grandes, jugosas y llenas de sabor.",
+    "servesCuisine": ["Burgers", "American", "Latin-inspired"],
+    "priceRange": "$$",
+    "address": {"@type":"PostalAddress","addressLocality":"Miami","addressRegion":"FL","addressCountry":"US"},
+    "areaServed": "Miami, Florida",
+    "url": "https://example.com",
+    "sameAs": ["https://instagram.com/canovaburgers"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand-link" href="#top" aria-label="Canova Burgers, inicio">
+        <svg class="brand-horizontal" viewBox="0 0 620 168" role="img" aria-label="Canova Burgers">
+          <g class="c-burger-mark" transform="translate(4 4) scale(.8)">
+            <path class="bun top" d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" clip-path="url(#topClipHeader)"/>
+            <path class="bun bottom" d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" clip-path="url(#bottomClipHeader)"/>
+            <path class="cheese" d="M31 91c23-5 49 5 73 0 17-3 33-3 46 0 3 1 4 6 1 8-22 5-47 0-69 3-22 2-39-3-51-1-5 1-6-7 0-10Z"/>
+            <rect class="meat" x="29" y="103" width="121" height="9" rx="4.5"/>
+            <defs><clipPath id="topClipHeader"><rect width="200" height="86"/></clipPath><clipPath id="bottomClipHeader"><rect y="114" width="200" height="86"/></clipPath></defs>
+          </g>
+          <text x="180" y="82" class="logo-word">CANOVA</text>
+          <text x="184" y="126" class="logo-sub">BURGERS</text>
+        </svg>
+      </a>
+
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#menu" data-i18n="navMenu">Menú</a>
+        <a href="#story" data-i18n="navStory">Historia</a>
+        <a href="#experience" data-i18n="navExperience">Experiencia</a>
+        <a href="#contact" data-i18n="navContact">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Cambiar idioma">EN</button>
+        <button class="cart-button" id="cartButton" aria-label="Abrir carrito">
+          <span aria-hidden="true">🛒</span>
+          <span class="cart-label" data-i18n="cart">Carrito</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <a class="button button-primary order-header" href="#menu" data-i18n="orderNow">Pedir ahora</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow" data-i18n="heroEyebrow">SMASH BURGERS · MIAMI</span>
+          <h1 id="hero-title">
+            <span data-i18n="heroLine1">BIG FLAVOR.</span>
+            <span class="accent-red" data-i18n="heroLine2">NO EXCUSES.</span>
+          </h1>
+          <p class="hero-lead" data-i18n="heroLead">Hamburguesas grandes para antojos grandes. Carne smash caramelizada, queso fundido y salsas que se recuerdan.</p>
+          <div class="hero-actions">
+            <a class="button button-primary button-xl" href="#menu" data-i18n="seeMenu">Ver menú</a>
+            <a class="button button-ghost button-xl" href="#story" data-i18n="knowStory">Conoce Canova</a>
+          </div>
+          <div class="hero-proof">
+            <div><strong>2×</strong><span data-i18n="doubleSmash">doble smash</span></div>
+            <div><strong>100%</strong><span data-i18n="realFlavor">sabor real</span></div>
+            <div><strong>MIAMI</strong><span data-i18n="madeHere">hecho aquí</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" aria-label="Ilustración de hamburguesa Canova">
+          <div class="heat heat-one"></div>
+          <div class="heat heat-two"></div>
+          <div class="hero-badge">MADE<br>TO<br>CRAVE.</div>
+          <div class="burger-stage">
+            <div class="burger-shadow"></div>
+            <div class="burger big-burger" aria-hidden="true">
+              <div class="burger-top sesame-heavy"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="sauce sauce-top"></div>
+              <div class="pickle-row"><span></span><span></span><span></span></div>
+              <div class="cheese-slice cheese-1"></div>
+              <div class="patty patty-1"></div>
+              <div class="cheese-slice cheese-2"></div>
+              <div class="patty patty-2"></div>
+              <div class="onion-row"><span></span><span></span><span></span></div>
+              <div class="sauce sauce-bottom"></div>
+              <div class="burger-bottom"></div>
+            </div>
+            <span class="scribble scribble-one">DOUBLE SMASH</span>
+            <span class="scribble scribble-two">SERIOUS CHEESE</span>
+          </div>
+          <svg class="seal seal-hero" viewBox="0 0 420 420" aria-label="Sello Canova Burgers">
+            <defs>
+              <path id="sealTop" d="M55,210a155,155 0 1,1 310,0" />
+              <path id="sealBottom" d="M365,230a155,155 0 1,1 -310,0" />
+            </defs>
+            <circle cx="210" cy="210" r="190" class="seal-ring" />
+            <circle cx="210" cy="210" r="166" class="seal-ring-thin" />
+            <text class="seal-text"><textPath href="#sealTop" startOffset="50%" text-anchor="middle">CANOVA BURGERS</textPath></text>
+            <text class="seal-text seal-text-small"><textPath href="#sealBottom" startOffset="50%" text-anchor="middle">BIG FLAVOR · NO EXCUSES</textPath></text>
+            <g transform="translate(120 120) scale(.9)">
+              <path class="bun top" d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" clip-path="url(#topClipSeal)"/>
+              <path class="bun bottom" d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" clip-path="url(#bottomClipSeal)"/>
+              <path class="cheese" d="M31 91c23-5 49 5 73 0 17-3 33-3 46 0 3 1 4 6 1 8-22 5-47 0-69 3-22 2-39-3-51-1-5 1-6-7 0-10Z"/>
+              <rect class="meat" x="29" y="103" width="121" height="9" rx="4.5"/>
+              <defs><clipPath id="topClipSeal"><rect width="200" height="86"/></clipPath><clipPath id="bottomClipSeal"><rect y="114" width="200" height="86"/></clipPath></defs>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="hero-marquee" aria-label="Beneficios de Canova">
+        <div class="marquee-track">
+          <span>SMASH FRESH</span><i>★</i><span>BIG PORTIONS</span><i>★</i><span>DELIVERY READY</span><i>★</i><span>MIAMI MADE</span><i>★</i>
+          <span>SMASH FRESH</span><i>★</i><span>BIG PORTIONS</span><i>★</i><span>DELIVERY READY</span><i>★</i><span>MIAMI MADE</span><i>★</i>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <span class="eyebrow dark" data-i18n="menuEyebrow">MENÚ DE LANZAMIENTO</span>
+            <h2 id="menu-title" data-i18n="menuTitle">Aquí se viene a comer.</h2>
+          </div>
+          <p data-i18n="menuIntro">Menú corto, producto serio. Cada receta está pensada para llegar caliente, firme y tan provocadora como en la foto.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Categorías de menú">
+          <button class="menu-tab active" role="tab" aria-selected="true" data-filter="all" data-i18n="filterAll">Todo</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="burgers" data-i18n="filterBurgers">Burgers</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="sides" data-i18n="filterSides">Acompañantes</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="combos" data-i18n="filterCombos">Combos</button>
+          <button class="menu-tab" role="tab" aria-selected="false" data-filter="drinks" data-i18n="filterDrinks">Bebidas</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+        <p class="price-note" data-i18n="priceNote">Precios de lanzamiento de referencia en USD. Editables antes de abrir ventas.</p>
+      </div>
+    </section>
+
+    <section class="section combo-section" id="experience">
+      <div class="container combo-grid">
+        <div class="combo-visual reveal">
+          <div class="combo-box">
+            <div class="combo-logo">CANOVA</div>
+            <div class="combo-copy">THE<br>BIG<br>ONE</div>
+          </div>
+          <div class="fries-pack">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <b>FRIES</b>
+          </div>
+          <div class="drink-cup"><span>C</span><b>ICE COLD</b></div>
+        </div>
+        <div class="combo-copy-block reveal">
+          <span class="eyebrow" data-i18n="comboEyebrow">ARMA EL COMBO</span>
+          <h2 data-i18n="comboTitle">Tu hambre. Tus reglas.</h2>
+          <p data-i18n="comboText">Elige tu burger, súmale papas crujientes, salsa extra y una bebida fría. Sin vueltas. Sin porciones tímidas.</p>
+          <ul class="check-list">
+            <li data-i18n="comboOne">Papas clásicas o loaded fries</li>
+            <li data-i18n="comboTwo">Salsa Canova o spicy mayo</li>
+            <li data-i18n="comboThree">Bebida helada</li>
+            <li data-i18n="comboFour">Empaque probado para delivery</li>
+          </ul>
+          <a href="#menu" class="button button-primary" data-i18n="buildCombo">Armar mi combo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-red why-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow light" data-i18n="whyEyebrow">POR QUÉ CANOVA</span>
+          <h2 data-i18n="whyTitle">Lo que ves debe ser lo que recibes.</h2>
+        </div>
+        <div class="value-grid">
+          <article class="value-card reveal"><span class="value-number">01</span><h3 data-i18n="valueOneTitle">Smash de verdad</h3><p data-i18n="valueOneText">Caramelización intensa, bordes crujientes y carne jugosa.</p></article>
+          <article class="value-card reveal"><span class="value-number">02</span><h3 data-i18n="valueTwoTitle">Porciones honestas</h3><p data-i18n="valueTwoText">El tamaño de la foto debe ser el tamaño que llega a tu puerta.</p></article>
+          <article class="value-card reveal"><span class="value-number">03</span><h3 data-i18n="valueThreeTitle">Delivery probado</h3><p data-i18n="valueThreeText">Pan, armado y empaque pensados para resistir el trayecto.</p></article>
+          <article class="value-card reveal"><span class="value-number">04</span><h3 data-i18n="valueFourTitle">Sabor que firma</h3><p data-i18n="valueFourText">Salsas propias y combinaciones fáciles de recordar.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="story">
+      <div class="container story-grid">
+        <div class="story-copy reveal">
+          <span class="eyebrow" data-i18n="storyEyebrow">NUESTRA HISTORIA</span>
+          <h2 data-i18n="storyTitle">Actitud rebelde por fuera. Cuidado familiar por dentro.</h2>
+          <p data-i18n="storyP1">Canova nace de una familia que entiende que una buena comida puede cambiar por completo un momento cotidiano.</p>
+          <p data-i18n="storyP2">Mezclamos la generosidad latina —donde servir mucho también es una forma de querer— con la energía urbana de Miami. El resultado: hamburguesas hechas para abrir la caja y saber que elegiste bien.</p>
+          <div class="story-signature">C como carácter.<br>Burger por naturaleza.</div>
+        </div>
+        <div class="story-seal-wrap reveal">
+          <svg class="seal seal-large" viewBox="0 0 420 420" aria-label="Sello Canova Burgers">
+            <defs><path id="storyTop" d="M55,210a155,155 0 1,1 310,0"/><path id="storyBottom" d="M365,230a155,155 0 1,1 -310,0"/></defs>
+            <circle cx="210" cy="210" r="190" class="seal-ring"/><circle cx="210" cy="210" r="166" class="seal-ring-thin"/>
+            <text class="seal-text"><textPath href="#storyTop" startOffset="50%" text-anchor="middle">CANOVA BURGERS</textPath></text>
+            <text class="seal-text seal-text-small"><textPath href="#storyBottom" startOffset="50%" text-anchor="middle">BIG FLAVOR · NO EXCUSES</textPath></text>
+            <text x="210" y="246" text-anchor="middle" class="seal-c">C</text>
+            <path class="seal-cheese" d="M120 188c30-8 63 8 93 0 21-5 43-5 64 0"/>
+            <path class="seal-meat" d="M120 210h158"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cream packaging-section">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow dark" data-i18n="packEyebrow">HECHO PARA LLEGAR BIEN</span>
+          <h2 data-i18n="packTitle">La experiencia empieza antes del primer bocado.</h2>
+        </div>
+        <div class="packaging-stage reveal" aria-label="Mockups de empaque Canova">
+          <div class="pack-bag"><span class="pack-handle"></span><div class="mini-seal">C</div><b>HANDLE<br>WITH HUNGER.</b></div>
+          <div class="pack-box"><div class="box-lid"><span>CANOVA</span><small>BURGERS</small></div><div class="box-side">BIG FLAVOR. NO EXCUSES.</div></div>
+          <div class="pack-cup"><div class="mini-seal">C</div><b>ICE COLD</b></div>
+          <div class="wrap-paper" aria-hidden="true"><span>C</span><span>C</span><span>C</span><span>C</span><span>C</span><span>C</span><span>C</span><span>C</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div><span class="eyebrow" data-i18n="testEyebrow">PRUEBA DE LANZAMIENTO</span><h2 data-i18n="testTitle">Así queremos que se sienta Canova.</h2></div>
+          <p data-i18n="testDisclaimer">Testimonios de muestra para visualizar el tono. Deben reemplazarse por reseñas verificadas después del lanzamiento.</p>
+        </div>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial-card reveal"><span class="sample-tag" data-i18n="sample">MUESTRA</span><p>“La caja se abre y ya sabes que no pediste una burger cualquiera.”</p><footer>— Launch tester 01</footer></blockquote>
+          <blockquote class="testimonial-card reveal"><span class="sample-tag" data-i18n="sample">MUESTRA</span><p>“Doble carne, queso por todas partes y aun así llegó firme.”</p><footer>— Launch tester 02</footer></blockquote>
+          <blockquote class="testimonial-card reveal"><span class="sample-tag" data-i18n="sample">MUESTRA</span><p>“Tiene esa energía de Miami, pero se siente hecha con cuidado.”</p><footer>— Launch tester 03</footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section waitlist-section" id="contact">
+      <div class="container waitlist-grid">
+        <div class="waitlist-copy reveal">
+          <span class="eyebrow" data-i18n="waitEyebrow">PRÓXIMAMENTE EN MIAMI</span>
+          <h2 data-i18n="waitTitle">Sé de los primeros en probar Canova.</h2>
+          <p data-i18n="waitText">Únete a la lista de lanzamiento para recibir la fecha de apertura, zona de cobertura y promoción inaugural.</p>
+          <div class="contact-links">
+            <a id="whatsappLink" href="#" rel="noopener">WhatsApp</a>
+            <a id="instagramLink" href="#" rel="noopener">Instagram</a>
+            <a id="emailLink" href="#">Email</a>
+          </div>
+        </div>
+        <form class="waitlist-form reveal" id="waitlistForm" novalidate>
+          <label for="waitName" data-i18n="name">Nombre</label>
+          <input id="waitName" name="name" autocomplete="name" required placeholder="Miguel" />
+          <label for="waitEmail" data-i18n="email">Correo</label>
+          <input id="waitEmail" name="email" type="email" autocomplete="email" required placeholder="nombre@email.com" />
+          <label for="waitZip" data-i18n="zip">ZIP code</label>
+          <input id="waitZip" name="zip" inputmode="numeric" pattern="[0-9]{5}" placeholder="33101" />
+          <button class="button button-primary button-full" type="submit" data-i18n="joinList">Quiero estar en la lista</button>
+          <p class="form-status" id="waitlistStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="section-heading reveal"><span class="eyebrow dark">FAQ</span><h2 data-i18n="faqTitle">Antes de pedir.</h2></div>
+        <div class="faq-list reveal">
+          <details><summary data-i18n="faq1q">¿Dónde entrega Canova?</summary><p data-i18n="faq1a">La zona exacta de cobertura se publicará antes del lanzamiento. Empezaremos con un radio limitado en Miami para cuidar tiempos y temperatura.</p></details>
+          <details><summary data-i18n="faq2q">¿Habrá pickup?</summary><p data-i18n="faq2a">Sí. El sitio mostrará dirección y horarios en cuanto el punto de recogida esté confirmado.</p></details>
+          <details><summary data-i18n="faq3q">¿Manejan alérgenos?</summary><p data-i18n="faq3a">Los productos pueden contener gluten, lácteos, huevo, soya y otros alérgenos. La ficha final estará disponible antes de comprar.</p></details>
+          <details><summary data-i18n="faq4q">¿Aceptan pedidos grandes?</summary><p data-i18n="faq4a">Sí, con reserva previa y disponibilidad operativa. Contáctanos por WhatsApp.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <svg class="footer-logo" viewBox="0 0 620 168" role="img" aria-label="Canova Burgers">
+          <text x="0" y="82" class="logo-word">CANOVA</text><text x="4" y="126" class="logo-sub">BURGERS</text>
+        </svg>
+        <p data-i18n="footerClaim">Hamburguesas grandes para antojos grandes.</p>
+      </div>
+      <div><h3 data-i18n="footerExplore">Explora</h3><a href="#menu" data-i18n="navMenu">Menú</a><a href="#story" data-i18n="navStory">Historia</a><a href="#contact" data-i18n="navContact">Contacto</a></div>
+      <div><h3 data-i18n="footerInfo">Información</h3><a href="#faq" data-i18n="allergens">Alérgenos</a><a href="privacy.html" data-i18n="privacy">Privacidad</a><a href="mailto:hola@canovaburgers.com">hola@canovaburgers.com</a></div>
+      <div><h3>Miami, FL</h3><p data-i18n="footerService">Delivery & pickup<br>Zona y horarios por confirmar</p></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Canova Burgers.</span><span>BIG FLAVOR. NO EXCUSES.</span></div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-labelledby="cartTitle">
+    <div class="cart-backdrop" data-close-cart></div>
+    <div class="cart-panel" role="dialog" aria-modal="true">
+      <div class="cart-head"><h2 id="cartTitle" data-i18n="yourOrder">Tu pedido</h2><button class="icon-button" data-close-cart aria-label="Cerrar carrito">×</button></div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-empty" id="cartEmpty"><span>🍔</span><p data-i18n="emptyCart">Tu carrito está esperando algo grande.</p></div>
+      <div class="order-method">
+        <label><input type="radio" name="method" value="delivery" checked><span data-i18n="delivery">Delivery</span></label>
+        <label><input type="radio" name="method" value="pickup"><span>Pickup</span></label>
+      </div>
+      <label for="orderNotes" data-i18n="notes">Notas del pedido</label>
+      <textarea id="orderNotes" rows="3" placeholder="Sin cebolla, salsa aparte..."></textarea>
+      <div class="cart-total"><span data-i18n="subtotal">Subtotal</span><strong id="cartSubtotal">$0.00</strong></div>
+      <button class="button button-primary button-full" id="checkoutButton" data-i18n="checkout">Continuar pedido</button>
+      <p class="checkout-note" data-i18n="checkoutNote">Demo: el enlace final de pedidos se configura antes del lanzamiento.</p>
+    </div>
+  </aside>
+
+  <template id="productTemplate">
+    <article class="product-card reveal">
+      <div class="product-art"><span class="product-tag"></span><div class="mini-burger"><div class="mb-top"></div><div class="mb-fill one"></div><div class="mb-cheese"></div><div class="mb-fill two"></div><div class="mb-bottom"></div></div></div>
+      <div class="product-info"><div class="product-title-row"><h3></h3><strong class="product-price"></strong></div><p class="product-description"></p><button class="button button-dark add-product" type="button"><span data-i18n="add">Agregar</span><b>＋</b></button></div>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
