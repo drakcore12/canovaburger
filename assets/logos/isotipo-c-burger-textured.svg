@@ -1,27 +1,172 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title description">
-  <title id="title">Isotipo Canova Burgers</title>
-  <desc id="description">Letra C transformada en hamburguesa, con fondo transparente.</desc>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1200 1200"
+     role="img"
+     aria-labelledby="title desc">
+
+  <title id="title">Isotipo Canova</title>
+  <desc id="desc">
+    Hamburguesa construida como letra C sobre fondo transparente.
+  </desc>
+
   <defs>
-    <clipPath id="top"><rect width="200" height="86"/></clipPath>
-    <clipPath id="bottom"><rect y="114" width="200" height="86"/></clipPath>
-    <filter id="grain" x="-5%" y="-5%" width="110%" height="110%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" seed="16" result="noise"/>
-      <feComposite in="noise" in2="SourceGraphic" operator="in" result="texture"/>
-      <feBlend in="SourceGraphic" in2="texture" mode="multiply"/>
+    <filter id="grain"
+            x="-4%" y="-4%"
+            width="108%" height="108%"
+            color-interpolation-filters="sRGB">
+
+      <feTurbulence
+        type="fractalNoise"
+        baseFrequency=".65"
+        numOctaves="3"
+        seed="12"
+        result="noise"/>
+
+      <feColorMatrix
+        in="noise"
+        type="matrix"
+        values="0 0 0 0 .25
+                0 0 0 0 .18
+                0 0 0 0 .08
+                0 0 0 .18 0"
+        result="coloredGrain"/>
+
+      <feComposite
+        in="coloredGrain"
+        in2="SourceAlpha"
+        operator="in"
+        result="clippedGrain"/>
+
+      <feBlend
+        in="SourceGraphic"
+        in2="clippedGrain"
+        mode="multiply"/>
     </filter>
+
+    <!-- Máscara del pan superior:
+         blanco = visible
+         negro = transparente -->
+    <mask id="topBunMask"
+          maskUnits="userSpaceOnUse"
+          x="0" y="0"
+          width="1200" height="1200">
+
+      <path
+        fill="#FFFFFF"
+        d="M202 499
+           C195 330 278 194 420 128
+           C532 76 666 72 786 112
+           C940 163 1036 298 1074 435
+           C1083 467 1064 496 1033 496
+           H854
+           C824 496 805 478 786 448
+           C746 385 664 365 598 385
+           C542 402 503 435 477 485
+           C464 511 445 529 414 529
+           H228
+           C212 529 202 518 202 499Z"/>
+
+      <!-- Semillas perforadas -->
+      <g fill="#000000">
+        <ellipse
+          cx="375" cy="278"
+          rx="23" ry="10"
+          transform="rotate(-41 375 278)"/>
+
+        <ellipse
+          cx="485" cy="229"
+          rx="23" ry="10"
+          transform="rotate(-25 485 229)"/>
+
+        <ellipse
+          cx="580" cy="169"
+          rx="23" ry="10"
+          transform="rotate(-12 580 169)"/>
+
+        <ellipse
+          cx="763" cy="185"
+          rx="23" ry="10"
+          transform="rotate(12 763 185)"/>
+
+        <ellipse
+          cx="879" cy="252"
+          rx="23" ry="10"
+          transform="rotate(27 879 252)"/>
+
+        <ellipse
+          cx="651" cy="253"
+          rx="23" ry="10"
+          transform="rotate(17 651 253)"/>
+      </g>
+    </mask>
   </defs>
-  <g filter="url(#grain)">
-    <path d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" fill="#F2E9D8" clip-path="url(#top)"/>
-    <path d="M161.46 148.02A78 78 0 1 1 161.46 51.98L133.88 73.53A43 43 0 1 0 133.88 126.47Z" fill="#F2E9D8" clip-path="url(#bottom)"/>
-    <path d="M31 91c23-5 49 5 73 0 17-3 33-3 46 0 3 1 4 6 1 8-22 5-47 0-69 3-22 2-39-3-51-1-5 1-6-7 0-10Z" fill="#FFC72C"/>
-    <rect x="29" y="103" width="121" height="9" rx="4.5" fill="#E6392E"/>
+
+  <!-- Pan superior bajado 35 px -->
+  <g transform="translate(0 35)">
+    <path
+      fill="#F2E9D8"
+      filter="url(#grain)"
+      mask="url(#topBunMask)"
+      d="M202 499
+         C195 330 278 194 420 128
+         C532 76 666 72 786 112
+         C940 163 1036 298 1074 435
+         C1083 467 1064 496 1033 496
+         H854
+         C824 496 805 478 786 448
+         C746 385 664 365 598 385
+         C542 402 503 435 477 485
+         C464 511 445 529 414 529
+         H228
+         C212 529 202 518 202 499Z"/>
   </g>
-  <g fill="#0D0D0D">
-    <ellipse cx="70" cy="40" rx="3.3" ry="1.5" transform="rotate(-20 70 40)"/>
-    <ellipse cx="92" cy="30" rx="3.3" ry="1.5" transform="rotate(15 92 30)"/>
-    <ellipse cx="116" cy="36" rx="3.3" ry="1.5" transform="rotate(-10 116 36)"/>
-    <ellipse cx="54" cy="55" rx="3.3" ry="1.5" transform="rotate(25 54 55)"/>
-    <ellipse cx="99" cy="52" rx="3.3" ry="1.5" transform="rotate(-25 99 52)"/>
-    <ellipse cx="133" cy="53" rx="3.3" ry="1.5" transform="rotate(20 133 53)"/>
-  </g>
+
+  <!-- Queso -->
+  <path
+    fill="#F9AD09"
+    filter="url(#grain)"
+    d="M228 618
+       C286 585 342 608 401 620
+       C462 632 504 606 560 603
+       C631 597 674 619 734 608
+       C801 596 859 571 923 578
+       C975 583 1024 600 1046 622
+       C1060 637 1054 660 1032 669
+       C969 693 904 673 842 673
+       C775 674 724 690 663 682
+       C597 674 555 652 493 661
+       C426 671 377 690 317 679
+       C268 671 229 654 214 641
+       C206 633 213 624 228 618Z"/>
+
+  <!-- Carne -->
+  <path
+    fill="#D9352B"
+    filter="url(#grain)"
+    d="M226 720
+       C365 717 503 722 641 716
+       C777 710 902 713 1032 719
+       C1052 720 1064 730 1064 746
+       C1064 763 1050 775 1029 776
+       C895 780 772 777 638 780
+       C499 783 366 779 228 781
+       C209 781 197 770 197 753
+       C197 735 208 722 226 720Z"/>
+
+  <!-- Pan inferior -->
+  <path
+    fill="#F2E9D8"
+    filter="url(#grain)"
+    d="M230 807
+       H412
+       C448 807 469 825 487 852
+       C520 900 566 928 624 931
+       C695 935 756 902 789 847
+       C808 817 830 806 862 806
+       H1019
+       C1059 806 1080 842 1066 875
+       C1014 1000 916 1091 779 1128
+       C657 1162 531 1154 420 1114
+       C317 1077 245 999 215 892
+       C202 846 208 807 230 807Z"/>
+
 </svg>
